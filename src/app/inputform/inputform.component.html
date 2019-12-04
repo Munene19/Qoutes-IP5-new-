@@ -4,7 +4,7 @@
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
           <label for="Author">Author:</label>
-          <textarea class="form-control" id="Author" rows="1" [(ngModel)]="newQuote.Author" name="Author" #description="ngModel" required></textarea>
+          <textarea class="form-control" id="Author" [(ngModel)]="newQuote.Author" name="Author" #Author="ngModel" required></textarea>
           <div [hidden]="Author.valid || Author.pristine" class="alert alert-danger">
             <p>This field is required</p>
           </div>  
